@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity implements WorkoutListFragme
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main);
     }
 
@@ -18,4 +19,5 @@ public class MainActivity extends AppCompatActivity implements WorkoutListFragme
         intent.putExtra(DetailActivity.EXTRA_WORKOUT_ID, (int)id);
         startActivity(intent);
     }
+
 }
